@@ -1,0 +1,19 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Canect BIC Preta",
+            "price": 5.89
+        },
+        {
+            "id": 2,
+            "name": "Notebook Mac Pro",
+            "price": 120000.89
+        },
+        {
+            "id": 3,
+            "name": "Samsung 520+",
+            "price": 5000.89
+        }
+    ]
+}
