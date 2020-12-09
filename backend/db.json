@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 1,
-      "name": "Canect BIC Preta",
+      "name": "Canect BIC Preta Básico",
       "price": 5.89
     },
     {
@@ -13,17 +13,12 @@
     {
       "id": 3,
       "name": "Samsung 520+",
-      "price": 5000.89
+      "price": "7020.00"
     },
     {
       "name": "Produto de Teste",
       "price": 125.98,
       "id": 4
-    },
-    {
-      "name": "Veio do formulário",
-      "price": "9.99",
-      "id": 5
     }
   ]
 }
