@@ -41,14 +41,15 @@ export class ProductService {
     return this.http.get<Product>(url)
   }
 
+  //foi passado o produto, pois é necessário todos os atributos para a atualização
   update(product: Product): Observable<Product> {
     const url = `${this.baseUrl}/${product.id}`
     return this.http.put<Product>(url, product)
   }
 
-  delete(product: Product): Observable<Product> {
-    const url = `${this.baseUrl}/${product.id}`
-    return this.http.delete<Product>(url, product)
+  delete(id: string): Observable<Product> {
+    const url = `${this.baseUrl}/${id}`
+    return this.http.delete<Product>(url)
   }
 
 }

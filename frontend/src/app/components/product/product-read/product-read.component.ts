@@ -9,7 +9,7 @@ import { Product } from './../product.model';
 })
 export class ProductReadComponent implements OnInit {
 
-  products: Product[] | undefined
+  products!: Product[];
   displayedColumns = ['id','name','price','action']
 
   constructor(
@@ -17,7 +17,7 @@ export class ProductReadComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.productService.read().subscribe((products: Product[] | undefined) => {
+    this.productService.read().subscribe((products: Product[]) => {
       this.products = products
       console.log(products)
     })

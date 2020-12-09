@@ -10,7 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ProductUpdateComponent implements OnInit {
 
-  product: Product | undefined
+  product!: Product;
 
   constructor(
     private productService: ProductService,
@@ -22,7 +22,7 @@ export class ProductUpdateComponent implements OnInit {
   ngOnInit(): void {
     //ao inicializar o componente, realiza uma consulta para preencher o formulário de atualização de produtos
     //pega o valor do parâmetro id da url
-    const id = this.route.snapshot.paramMap.get('id')
+    const id = this.route.snapshot.paramMap.get('id') || ''
     this.productService.readyById(id).subscribe(product => {
       this.product = product
     });

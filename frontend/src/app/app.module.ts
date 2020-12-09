@@ -15,7 +15,6 @@ import { RedDirective } from './directives/red.directive';
 import { ForDirective } from './directives/for.directive';
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 import { ProductReadComponent } from './components/product/product-read/product-read.component';
-import { ProductRead2Component } from './components/product/product-read2/product-read2.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
@@ -55,7 +54,6 @@ registerLocaleData(localePt);
     ProductReadComponent,
     ProductUpdateComponent,
     ProductDeleteComponent,
-    //ProductRead2Component,
   ],
   //bibliotecas
   imports: [
