@@ -12,8 +12,8 @@ export class ProductCreateComponent implements OnInit {
   
   //cria um atributo do tipo da interface do Produto (contida no arquivo de modelo)
   product: Product = {
-    name: 'Produto de Teste',
-    price: 125.98
+    name: '',
+    price: undefined
   }
 
   constructor(
